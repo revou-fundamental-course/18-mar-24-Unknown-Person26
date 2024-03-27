@@ -1,0 +1,652 @@
+/* CSS */
+body {
+  font-family: 'Roboto';
+  margin: 0;
+  background-color: #eeeeee;
+}
+
+hr {
+  border: none; 
+  height: 2px;
+  background-color: #ccc; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 92px;
+  background-color: rgb(2, 2, 2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1000;
+}
+/* Right Section */
+.right_section {
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+.logo_app {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  object-fit: cover;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* Middle Section */
+.middle_section {
+flex: 1;
+margin-left: 70px;
+margin-right: 50px;
+max-width: 700px;
+display: flex;
+align-items: center;
+}
+
+.search_bar {
+  flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(195, 195, 195);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  .search_bar::placeholder {
+    font-family: 'Roboto';
+    font-size: 16px;
+  }
+  
+.search_button {
+  height: 39px;
+  width: 66px;
+  background-color: rgb(240, 240, 240);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(195, 195, 195);
+  margin-left: -5px;
+  margin-right: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+  transition: box-shadow 0.1s, margin-top 0.15s, margin-left 0.15s;
+  cursor: pointer;
+}
+
+.search_button:active {
+  box-shadow: none;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+.search_icon{
+  height: 30px;
+  margin-top: 4px;
+}
+
+.voice_button {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(244, 244, 244);
+  cursor: pointer;
+}
+
+.voice_icon {
+  height: 28px;
+  margin-top: 4px; 
+}
+/* left Section */
+.left_section{
+width: 400px;
+display: flex;
+align-items: center;
+}
+
+.button_home {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: rgb(240, 240, 240);;
+  border-style: solid;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-color: rgb(25, 28, 29);
+  color: rgb(25, 28, 29);
+  text-decoration: none;
+  transition: opacity 0.38s;
+  cursor: pointer;
+}
+
+.button_home:hover {
+  opacity: 0.8;
+}
+
+.button_collection {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: rgb(240, 240, 240);;
+  border-style: solid;
+  border-color: rgb(25, 28, 29);
+  color: rgb(25, 28, 29);
+  text-decoration: none;
+  margin-right: -5px;
+  margin-left: -5px;
+  transition: opacity 0.38s;
+  cursor: pointer;
+}
+
+.button_collection:hover {
+  opacity: 0.8;
+}
+
+.button_contact {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: rgb(240, 240, 240);;
+  border-style: solid;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-color: rgb(25, 28, 29);
+  color: rgb(25, 28, 29);
+  text-decoration: none;
+  transition: opacity 0.38s;
+  cursor: pointer;
+}
+
+.button_contact:hover {
+  opacity: 0.8;
+}
+/* Home Section */
+.home_section {
+  padding-top: 100px;
+}
+
+.title_home {
+  text-align: center;
+  font-family: 'Libre Baskerville';
+  font-size: 36px;
+  color: rgb(24, 24, 24);
+}
+
+.message_home {
+  text-align: center;
+  color: rgb(147, 147, 147);
+  margin-bottom: 58px;
+}
+/* Content Section */
+.content {
+  display: flex;
+  flex-direction: row;
+}
+/* Slide Section */
+.slide_section {
+  margin-left: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.car_img {
+  height: 470px;
+  width: 750px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 1s ease-in-out;
+  display: none;
+}
+
+.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Comment Section */
+.comment_section {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-right: 50px;
+  border-right: 1px solid #ccc;
+  max-width: 250px;
+}
+
+.user_section {
+  display: flex;
+  margin-right: 30px;
+}
+
+.user_info {
+  display: flex;
+  align-items: flex-start; 
+}
+
+.img_user {
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.text_info {
+  display: flex;
+  flex-direction: column; 
+}
+.customer_name, customer_status {
+  margin: 0;
+}
+
+/* Benefit Section */
+.benefit_section {
+  max-width: 350px;
+}
+
+/* Collection Section */
+.collection_section {
+  padding-top: 80px;
+}
+.title_collection {
+  text-align: center;
+  font-family: 'Libre Baskerville';
+  font-size: 36px;
+  color: rgb(24, 24, 24);
+  padding-top: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.message_collection {
+  text-align: center;
+  color: rgb(147, 147, 147);
+  margin: 0;
+}
+
+.category_section {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+}
+
+.image-container {
+  box-shadow: 5px 5px 20px black;
+  height: 240px;
+  overflow: hidden;
+  margin: 27px;
+  max-width: 400px;
+  border-radius: 4px;
+}
+
+.image-container:hover {
+  cursor: pointer;
+}
+
+.image-container:hover .first_row_text {
+  height: 120px;
+  bottom: -458px;
+}
+
+.image-container:hover .second_row_text {
+  height: 120px;
+  bottom: -750px;
+}
+
+.image-container:hover .description {
+  opacity: 1;
+  visibility: visible;
+}
+
+.image-container:hover .category_img {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.category_img {
+  height: 240px;
+  width: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+  transition: 0.38s;
+}
+
+.first_row_text {
+  height: 50px;
+  width: 400px;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: -458px;
+  background: rgba(27, 27, 27, 0.5);
+  color: white;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  transition: 0.38s;
+}
+
+.second_row_text {
+  height: 50px;
+  width: 400px;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: -750px;
+  background: rgba(27, 27, 27, 0.5);
+  color: white;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  transition: 0.38s;
+}
+
+.text_img,
+.description {
+  margin: 0;
+}
+.text_img {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+.description {
+  margin-left: 10px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Contact Section */
+.contact_us_section {
+  padding-top: 100px;
+}
+.title_contact {
+  text-align: center;
+  font-family: 'Libre Baskerville';
+  font-size: 36px;
+  color: rgb(24, 24, 24);
+  padding-top: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.message_contact {
+  text-align: center;
+  color: rgb(147, 147, 147);
+  margin-bottom: 60px;
+  
+}
+
+.customer_sevice_section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.motto_section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.motto_container_1 {
+  max-width: 320px;
+  margin-right: 10px;
+}
+.motto_container_2 {
+  max-width: 320px;
+  margin-left: 10px;
+}
+
+.motto_logo {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+.title_motto {
+  font-size: 25px;
+  margin: 0;
+}
+.message_motto {
+  text-align: justify;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.contact_section form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.contact_section {
+  background-color: white;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 60px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px; 
+}
+
+.contact_header {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.contact_message {
+  font-size: 16px;
+  color: rgb(175, 175, 175);
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.contact_label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.input_contact {
+  font-size: 16px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 4px;
+  border-color: rgb(195, 195, 195);
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.error{
+  margin: 0;
+  color: red;
+}
+.submit_contact {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(25, 28, 29);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(25, 28, 29);
+  cursor: pointer;
+  transition: background-color 0.38s,
+  color 0.38s;
+}
+
+.submit_contact:hover {
+  background-color: white;
+  color: rgb(25, 28, 29);
+}
+/* Footer Section */
+.title_footer {
+  text-align: center;
+  font-family: 'Libre Baskerville';
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.text_footer_1{
+  text-align: center;
+  color: rgb(156, 156, 156);
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.text_footer_2{
+  text-align: center;
+  color: rgb(156, 156, 156);
+  margin: 0;
+  margin-bottom: 10px;
+}
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  /* Header */
+  .middle_section {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  /* Left Section */
+  .left_section {
+    max-width: 100%;
+  }
+
+  .button_home,
+  .button_collection,
+  .button_contact {
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* Content Section */
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title_home {
+    margin-top: 20px;
+  }
+  /* Slide Section */
+  .slide_section {
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 111px;
+  }
+  
+  /* Comment Section */
+  .comment_section {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 0;
+    border-right: none;
+    max-width: 100%;
+  }
+  
+  /* Collection Section */
+  .collection_section {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 0;
+    border-right: none;
+    max-width: 100%;
+  }
+  
+  #row_1 {
+    bottom: -1330px;
+  }
+
+  #row_1:hover {
+    bottom: -1330px;
+  }
+
+  #row_2 {
+    bottom: -1633px;
+  }
+  
+  #row_2:hover {
+    bottom: -1633px;
+  }
+  #row_3 {
+    bottom: -1926px;
+  }
+  
+  #row_3:hover {
+    bottom: -1926px;
+  }
+  #row_4 {
+    bottom: -2220px;
+  }
+  
+  #row_4:hover {
+    bottom: -2220px;
+  }
+  #row_5 {
+    bottom: -2514px;
+  }
+  
+  #row_5:hover {
+    bottom: -2514px;
+  }
+  #row_6 {
+    bottom: -2808px;
+  }
+  
+  #row_6:hover {
+    bottom: -2808px;
+  }
+
+  /* Contact Section */
+  .contact_us_section {
+    margin-top: 100px;
+  }
+
+  .customer_sevice_section {
+    display: flex;
+    flex-direction: column; /* Mengubah tata letak menjadi kolom */
+    align-items: center; /* Pusatkan item di dalam kolom */
+  }
+
+  .motto_section {
+    display: flex;
+    flex-direction: column; /* Mengubah tata letak menjadi kolom */
+    align-items: center; /* Pusatkan item di dalam kolom */
+  }
+
+  .motto_container_1,
+  .motto_container_2 {
+    max-width: 400px; /* Membuat lebar maksimal agar konten tidak terlalu lebar */
+    margin: 15px 0; /* Memberikan margin atas dan bawah */
+  }
+
+  .contact_section {
+    padding-left: 20px; /* Ubah padding kiri */
+    padding-right: 20px; /* Ubah padding kanan */
+  }
+
+  .contact_header,
+  .contact_message,
+  .contact_label,
+  .input_contact,
+  .submit_contact {
+    max-width: 100%; /* Membuat lebar maksimal agar konten tidak terlalu lebar */
+  }
+}
