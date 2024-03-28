@@ -25,7 +25,7 @@ header {
   justify-content: space-between;
   z-index: 1000;
 }
-/* Right Section */
+
 .right_section {
 display: flex;
 flex-direction: row;
@@ -41,7 +41,6 @@ align-items: center;
   margin-top: 10px;
 }
 
-/* Middle Section */
 .middle_section {
 flex: 1;
 margin-left: 70px;
@@ -106,7 +105,7 @@ align-items: center;
   height: 28px;
   margin-top: 4px; 
 }
-/* left Section */
+
 .left_section{
 width: 400px;
 display: flex;
@@ -189,12 +188,12 @@ align-items: center;
   color: rgb(147, 147, 147);
   margin-bottom: 58px;
 }
-/* Content Section */
+
 .content {
   display: flex;
   flex-direction: row;
 }
-/* Slide Section */
+
 .slide_section {
   margin-left: 10px;
   position: relative;
@@ -216,7 +215,6 @@ align-items: center;
   opacity: 1;
 }
 
-/* Comment Section */
 .comment_section {
   margin-left: 50px;
   margin-right: 50px;
@@ -251,7 +249,6 @@ align-items: center;
   margin: 0;
 }
 
-/* Benefit Section */
 .benefit_section {
   max-width: 350px;
   text-align: justify;
@@ -515,15 +512,14 @@ align-items: center;
   margin: 0;
   margin-bottom: 10px;
 }
-/* Media Queries */
+/* 768 x 689 */
 @media only screen and (max-width: 768px) {
   /* Header */
   .middle_section {
     margin-left: 20px;
     margin-right: 20px;
   }
-  
-  /* Left Section */
+
   .left_section {
     max-width: 100%;
   }
@@ -537,24 +533,22 @@ align-items: center;
     padding-bottom: 10px;
   }
 
-  /* Content Section */
-  .content {
-    flex-direction: column;
-    align-items: center;
-  }
-
+  /* Home Section */
   .title_home {
     margin-top: 20px;
   }
   .message_home {
     margin-bottom: 10px;
   }
-  /* Slide Section */
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .slide_section {
     margin-left: 0;
   }
   
-  /* Comment Section */
   .comment_section {
     margin-left: 20px;
     margin-right: 20px;
@@ -649,10 +643,170 @@ align-items: center;
   .contact_label,
   .input_contact,
   .submit_contact {
-    max-width: 100%; /* Membuat lebar maksimal agar konten tidak terlalu lebar */
+    max-width: 100%; 
   }
 }
+/* 320 x 689 */
+@media only screen and (max-width: 320px) {
+  /* Header Section */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 150px;
+  }
+  
+  .right_section {
+    margin-bottom: 30px;
+    margin-right: 50px;
+  }
+  .middle_section {
+    margin-bottom: 30px;
+    margin-right: 38px;
+  }
+  .left_section {
+    margin-bottom: 30px;
+    margin-left: 60px;
+  }
+  /* Home Section */
+  .home_section {
+    padding-top: 250px;
+  }
+  .title_home {
+    font-size: 20px;
+    margin-left: 100px;
+  }
+  .message_home {
+    margin-left: 100px;
+  }
+  .car_img {
+    height: 400px;
+    width: 500px;
+    margin-left: 54px;
+  }
+  .benefit_section{
+    margin-left: 20px;
+  }
+  /* Collection Section */
+  .collection_section {
+    padding-top: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .image-container {
+    height: 150px;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .category_img {
+    max-width: 100%;
+    width: 100%;
+    height: 200px; 
+  }
+  #img_1 {
+    object-fit: cover;
+    object-position: top;
 
+  }
+  #img_2 {
+    object-fit: cover;
+    object-position: center;
+
+  }
+  #img_3 {
+    object-fit: contain;
+    object-position: top center;
+
+  }
+  #img_4 {
+    object-fit: cover;
+    object-position: center;
+
+  }
+  #img_5 {
+    object-fit: cover;
+  }
+  #img_6 {
+    object-fit: cover;
+    object-position: center;
+
+  }
+  #row_1 {
+    bottom: -1555px;
+  }
+  
+  #row_1:hover {
+    bottom: -1555px;
+  }
+
+  #row_2 {
+    bottom: -1760px;
+  }
+  
+  #row_2:hover {
+    bottom: -1760px;
+  }
+  #row_3 {
+    bottom: -1966px;
+  }
+  
+  #row_3:hover {
+    bottom: -1966px;
+  }
+  #row_4 {
+    bottom: -2170px;
+  }
+  
+  #row_4:hover {
+    bottom: -2170px;
+  }
+  #row_5 {
+    bottom: -2373px;
+  }
+  
+  #row_5:hover {
+    bottom: -2373px;
+  }
+  #row_6 {
+    bottom: -2580px;
+  }
+  
+  #row_6:hover {
+    bottom: -2580px;
+  }
+  .first_row_text {
+    height: 50px;
+    width: 246px;
+  }
+  .image-container:hover .first_row_text {
+    height: 100px;
+  }
+  .second_row_text {
+    height: 50px;
+    width: 246px;
+  }
+  .image-container:hover .second_row_text {
+    height: 100px;
+  }
+  .text_img {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 12px;
+  }
+  /* Contact Section */
+  .contact_us_section {
+    margin-left: 100px;
+    padding-top: 250px;
+  }
+  /* Footer Section */
+  .footer_section{
+    margin-left: 100px;
+  }
+}
+/* 2560 x 1253 */
 @media only screen and (min-width: 2560px) {
   /* Header */
   header {
@@ -693,7 +847,7 @@ align-items: center;
   .voice_icon {
     height: 50px;
   }
-  /* Left Section */
+
   .left_section {
     width: 900px;
     max-width: 100%;
@@ -709,7 +863,7 @@ align-items: center;
     font-size: 30px
   }
 
-  /* Content Section */
+/* Home Section */
   .home_section {
     padding-top: 150px;
     padding-bottom: 70px;
@@ -728,7 +882,7 @@ align-items: center;
     font-size: 30px;
     margin-bottom: 50px;
   }
-  /* Slide Section */
+
   .slide_section {
     margin-left: 20px;
     margin-top: 40px;
@@ -743,7 +897,7 @@ align-items: center;
     width: 600px;
     max-width: 100%;
   }
-  /* Comment Section */
+
   .comment_section {
     margin-left: 100px;
     margin-right: 20px;
@@ -761,7 +915,7 @@ align-items: center;
     width: 100px;
   }
   
-  /* Collection Section */
+/* Collection Section */
   .collection_section {
     margin-left: 20px;
     margin-right: 20px;

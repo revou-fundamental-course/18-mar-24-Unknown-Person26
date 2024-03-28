@@ -1,9 +1,9 @@
 // Scrolling Navigation
 function smoothScroll(target, duration) {
   var targetElement = document.querySelector(target);
-  if (!targetElement) return; // Memastikan elemen target ada
+  if (!targetElement) return; 
 
-  var targetPosition = targetElement.offsetTop; // Menggunakan offsetTop untuk mendapatkan posisi target
+  var targetPosition = targetElement.offsetTop; 
   var startPosition = window.pageYOffset;
   var distance = targetPosition - startPosition;
   var startTime = null;
@@ -35,10 +35,6 @@ navLinks.forEach(function(navLink) {
     smoothScroll(targetId, 1000);
   });
 });
-
-
-
-
 
 // Form Validation
 function validateForm() {
@@ -92,8 +88,7 @@ function autoSlide() {
     slides[index].classList.remove('active');
     index = (index + 1) % totalSlides;
     slides[index].classList.add('active');
-  }, 3000); // Change the time interval (in milliseconds) as needed
+  }, 3000); 
 }
 
-// Call the function to start the auto slide
 autoSlide();
