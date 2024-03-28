@@ -254,6 +254,7 @@ align-items: center;
 /* Benefit Section */
 .benefit_section {
   max-width: 350px;
+  text-align: justify;
 }
 
 /* Collection Section */
@@ -545,11 +546,12 @@ align-items: center;
   .title_home {
     margin-top: 20px;
   }
+  .message_home {
+    margin-bottom: 10px;
+  }
   /* Slide Section */
   .slide_section {
     margin-left: 0;
-    margin-top: 20px;
-    margin-bottom: 111px;
   }
   
   /* Comment Section */
@@ -571,47 +573,47 @@ align-items: center;
   }
   
   #row_1 {
-    bottom: -1330px;
+    bottom: -1360px;
   }
 
   #row_1:hover {
-    bottom: -1330px;
+    bottom: -1360px;
   }
 
   #row_2 {
-    bottom: -1633px;
+    bottom: -1660px;
   }
   
   #row_2:hover {
-    bottom: -1633px;
+    bottom: -1660px;
   }
   #row_3 {
-    bottom: -1926px;
+    bottom: -1953px;
   }
   
   #row_3:hover {
-    bottom: -1926px;
+    bottom: -1953px;
   }
   #row_4 {
-    bottom: -2220px;
+    bottom: -2248px;
   }
   
   #row_4:hover {
-    bottom: -2220px;
+    bottom: -2248px;
   }
   #row_5 {
-    bottom: -2514px;
+    bottom: -2542px;
   }
   
   #row_5:hover {
-    bottom: -2514px;
+    bottom: -2542px;
   }
   #row_6 {
-    bottom: -2808px;
+    bottom: -2835px;
   }
   
   #row_6:hover {
-    bottom: -2808px;
+    bottom: -2835px;
   }
 
   /* Contact Section */
@@ -621,25 +623,25 @@ align-items: center;
 
   .customer_sevice_section {
     display: flex;
-    flex-direction: column; /* Mengubah tata letak menjadi kolom */
-    align-items: center; /* Pusatkan item di dalam kolom */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .motto_section {
     display: flex;
-    flex-direction: column; /* Mengubah tata letak menjadi kolom */
-    align-items: center; /* Pusatkan item di dalam kolom */
+    flex-direction: column;
+    align-items: center; 
   }
 
   .motto_container_1,
   .motto_container_2 {
-    max-width: 400px; /* Membuat lebar maksimal agar konten tidak terlalu lebar */
-    margin: 15px 0; /* Memberikan margin atas dan bawah */
+    max-width: 400px; 
+    margin: 15px 0; 
   }
 
   .contact_section {
-    padding-left: 20px; /* Ubah padding kiri */
-    padding-right: 20px; /* Ubah padding kanan */
+    padding-left: 20px; 
+    padding-right: 20px; 
   }
 
   .contact_header,
@@ -648,5 +650,264 @@ align-items: center;
   .input_contact,
   .submit_contact {
     max-width: 100%; /* Membuat lebar maksimal agar konten tidak terlalu lebar */
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  /* Header */
+  header {
+    height: 130px;
+  }
+  .right_section {
+    max-width: 100%;
+  }
+  .logo_app {
+    width: 100px;
+    height: 100px;
+  }
+  .middle_section {
+    max-width: 100%;
+  }
+  .search_bar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .search_bar::placeholder {
+    font-size: 30px;
+  }
+  .search_button {
+    height: 67px;
+    width: 100px;
+  }
+  
+  .search_icon{
+    height: 50px;
+    margin-top: 4px;
+  }
+
+  .voice_button {
+    height: 67px;
+    width: 70px;
+    border-radius: 40px;
+  }
+  .voice_icon {
+    height: 50px;
+  }
+  /* Left Section */
+  .left_section {
+    width: 900px;
+    max-width: 100%;
+  }
+
+  .button_home,
+  .button_collection,
+  .button_contact {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px
+  }
+
+  /* Content Section */
+  .home_section {
+    padding-top: 150px;
+    padding-bottom: 70px;
+  }
+  .content {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .title_home {
+    margin-top: 10px;
+    font-size: 50px;
+  }
+  .message_home {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  /* Slide Section */
+  .slide_section {
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  .car_img {
+    height: 850px;
+    width: 1200px;
+  }
+  .benefit_section {
+    margin-right: 100px;
+    font-size: 30px;
+    width: 600px;
+    max-width: 100%;
+  }
+  /* Comment Section */
+  .comment_section {
+    margin-left: 100px;
+    margin-right: 20px;
+    padding-right: 0;
+    border-right: none;
+    max-width: 100%;
+    font-size: 30px;
+    flex: 1;
+  }
+  .customer_comment {
+    font-size: 25px;
+  }
+  .img_user {
+    height: 100px;
+    width: 100px;
+  }
+  
+  /* Collection Section */
+  .collection_section {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 0;
+    padding-top: 120px;
+    border-right: none;
+    max-width: 100%;
+  }
+  
+  .title_collection {
+    margin-top: 10px;
+    font-size: 50px;
+  }
+  .message_collection {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    height: 430px;
+    width: 700px;
+    max-width: 1000px;
+  }
+  
+  .category_img {
+    max-width: 100%;
+    width: 700px;
+    height: 430px; 
+  }
+  #row_1 {
+    bottom: -842px;
+  }
+  
+  #row_1:hover {
+    bottom: -842px;
+  }
+
+  #row_2 {
+    bottom: -842px;
+  }
+  
+  #row_2:hover {
+    bottom: -842px;
+  }
+  #row_3 {
+    bottom: -842px;
+  }
+  
+  #row_3:hover {
+    bottom: -842px;
+  }
+  #row_4 {
+    bottom: -1326px;
+  }
+  
+  #row_4:hover {
+    bottom: -1326px;
+  }
+  #row_5 {
+    bottom: -1326px;
+  }
+  
+  #row_5:hover {
+    bottom: -1326px;
+  }
+  #row_6 {
+    bottom: -1326px;
+  }
+  
+  #row_6:hover {
+    bottom: -1326px;
+  }
+  .text_img {
+    font-size: 50px;
+  }
+  .description{
+    font-size: 30px;
+  }
+  .first_row_text {
+    height: 100px;
+    width: 700px;
+  }
+  .image-container:hover .first_row_text {
+    height: 240px;
+  }
+  .second_row_text {
+    height: 100px;
+    width: 700px;
+  }
+  .image-container:hover .second_row_text {
+    height: 230px;
+  }
+  /* Contact Section */
+  .contact_us_section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .title_contact {
+    margin-top: 10px;
+    font-size: 50px;
+  }
+  .message_contact {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .motto_container_1 {
+    width: 500px;
+    max-width: 100%;
+  }
+  .motto_container_2 {
+    width: 500px;
+    max-width: 100%;
+    margin-left: 20px;
+  }
+  .motto_logo {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+  }
+  .title_motto {
+    font-size: 40px;
+  }
+  .message_motto {
+    font-size: 30px;
+  }
+  .contact_section {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+    max-width: 100%;
+  }
+  .contact_header,
+  .contact_label {
+    font-size: 40px;
+  }
+  .contact_message {
+    font-size: 25px;
+    max-width: 500px;
+  }
+  .input_contact {
+    font-size: 30px;
+  }
+  .error {
+    font-size: 23px;
+  }
+  .submit_contact{
+    font-size: 30px;
   }
 }
