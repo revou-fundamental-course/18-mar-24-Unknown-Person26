@@ -1,3 +1,11 @@
+// Search Animation 
+const searchButton = document.getElementById('search_button');
+const searchBar = document.querySelector('.search_bar');
+
+searchButton.addEventListener('click', function() {
+  searchBar.classList.toggle('active'); // Toggle the 'active' class on search bar
+});
+
 // Scrolling Navigation
 function smoothScroll(target, duration) {
   var targetElement = document.querySelector(target);
@@ -26,7 +34,8 @@ function smoothScroll(target, duration) {
   requestAnimationFrame(animation);
 }
 
-var navLinks = document.querySelectorAll('.nav_bar a');
+// Menambahkan event listener pada setiap tautan di bagian middle section
+var navLinks = document.querySelectorAll('.middle_section a');
 
 navLinks.forEach(function(navLink) {
   navLink.addEventListener('click', function(event) {
@@ -35,6 +44,42 @@ navLinks.forEach(function(navLink) {
     smoothScroll(targetId, 1000);
   });
 });
+
+// Menambahkan kelas aktif pada tautan yang sesuai dengan bagian yang sedang aktif
+window.addEventListener('scroll', function() {
+  var homeSection = document.getElementById('home');
+  var collectionSection = document.getElementById('collection');
+  var contactSection = document.getElementById('contact');
+  var navLinks = document.querySelectorAll('.nav_link');
+
+  if (isInViewport(homeSection)) {
+    setActiveLink(navLinks, 0);
+  } else if (isInViewport(collectionSection)) {
+    setActiveLink(navLinks, 1);
+  } else if (isInViewport(contactSection)) {
+    setActiveLink(navLinks, 2);
+  }
+});
+
+// Fungsi untuk menentukan apakah suatu elemen dalam viewport
+function isInViewport(element) {
+  var bounding = element.getBoundingClientRect();
+  return (
+    bounding.top >= 0 &&
+    bounding.left >= 0 &&
+    bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Fungsi untuk menambahkan kelas aktif pada tautan yang sesuai
+function setActiveLink(links, index) {
+  links.forEach(function(link) {
+    link.classList.remove('active');
+  });
+  links[index].classList.add('active');
+}
+
 
 // Form Validation
 function validateForm() {
@@ -69,7 +114,11 @@ function validateForm() {
   } else {
     document.getElementById("carError").innerText = "";
   }
-
+  // Tampilkan pesan alert jika formulir valid
+if (isValid) {
+  openPopup(); // Panggil fungsi openPopup()
+  resetForm(); // Memanggil fungsi untuk mengosongkan formulir
+}
   return isValid;
 }
 
@@ -77,6 +126,21 @@ function isValidEmail(email) {
   var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailPattern.test(email);
 }
+// Fungsi untuk membuka pop-up
+function openPopup() {
+  document.getElementById("customPopup").style.display = "block";
+}
+// Function to reset the form
+function resetForm() {
+  document.getElementById("name").value = ""; // Kosongkan nilai input nama
+  document.getElementById("email").value = ""; // Kosongkan nilai input email
+  document.getElementById("cars").value = ""; // Kosongkan nilai input car
+}
+// Fungsi untuk menutup pop-up
+function closePopup() {
+  document.getElementById("customPopup").style.display = "none";
+}
+
 
 // Function to automatically slide the banner images
 function autoSlide() {

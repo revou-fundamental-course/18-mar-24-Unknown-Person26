@@ -1,53 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Head Section -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
   <title>Formosura sem igual</title>
+  <!-- CSS -->
   <link rel="stylesheet" href="/18-mar-24-Unknown-Person26/css/style.css">
+  <!-- Icon -->
   <link rel="icon" href="/18-mar-24-Unknown-Person26/icon/favicon/favicon.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
+<!-- Body -->
 <body>
+  <!-- Header -->
   <header>
-    <section class="right_section">
+    <!-- Left Section -->
+    <section class="left_section">
+      <!-- Logo -->
       <img class="logo_app" src="/18-mar-24-Unknown-Person26/img/logo.png" alt="logo">
     </section>
-    <section class="middle_section">     
-      <input class="search_bar" type="text" placeholder="Find your car">
-      <button class="search_button">
-        <img class="search_icon" src="/18-mar-24-Unknown-Person26/icon/search.svg" alt="search_icon">
-      </button>
-      <button class="voice_button">
-        <img class="voice_icon" src="/18-mar-24-Unknown-Person26/icon/voice-search-icon.svg" alt="voice-search-icon">
-      </button>
+    <!-- Middle Section -->
+    <section class="middle_section">    
+       <!--Navlink  -->
+      <a href="#home" class="nav_link">Home</a>
+      <a href="#collection" class="nav_link">Collection</a>
+      <a href="#contact" class="nav_link">Contact Us</a>
     </section>
-    <section class="left_section">   
-      <nav class="nav_bar">
-        <a href="#home" class="button_home">Home</a>
-        <a href="#collection" class="button_collection">Collection</a>
-        <a href="#contact" class="button_contact">Contact Us</a>
-      </nav>
+    <!-- Right Section -->
+    <section class="right_section">   
+      <!-- Search Bar -->
+      <input class="search_bar" type="text" placeholder="Find your car">
+      <!-- Button -->
+      <button id="search_button" class="search_button">
+        <img class="search_icon" src="/18-mar-24-Unknown-Person26/icon/search.png" alt="search_icon">
+      </button>
     </section>
   </header>
+  <!-- Main -->
   <main>
+    <!-- Home Section -->
     <section class="home_section" id="home">
+      <!-- Title -->
       <h1 class="title_home">Your Journey Starts Here</h1>
+      <!-- Message -->
       <p class="message_home">Explore Luxury, Performance, and Style in Our Car Collection!</p>
-      <article class="content">
+      <!-- Content Section -->
+      <div class="content">
+        <!-- Slide Section -->
         <section class="slide_section">
+          <!-- Sline Image -->
           <img class="car_img" src="/18-mar-24-Unknown-Person26/img/car1.jpg" alt="mclaren">
           <img class="car_img" src="/18-mar-24-Unknown-Person26/img/car2.jpg" alt="corvet">
-          <img class="car_img" src="/18-mar-24-Unknown-Person26/img/car3.png" alt="jeep">
+          <img class="car_img" src="/18-mar-24-Unknown-Person26/img/car3.jpg" alt="jeep">
           <img class="car_img" src="/18-mar-24-Unknown-Person26/img/car4.jpg" alt="mustang">
           <img class="car_img" src="/18-mar-24-Unknown-Person26/img/car5.jpg" alt="nio">
           <img class="car_img" src="/18-mar-24-Unknown-Person26/img/car6.jpg" alt="bmw">
         </section>
+        <!-- Comment Section -->
         <section class="comment_section">
           <h1 class="customer_header">Customers Response :</h1>
           <p class="customer_comment">"Never knew i can find those car in this place!"</p>
@@ -81,6 +95,7 @@
             </div>
           </section>
         </section>
+        <!-- Benefit Section -->
         <section class="benefit_section">
           <h1 class="benefit_header">What make us different :</h1>
           <h1>&#8226; Exclusive Promotions</h1>
@@ -90,9 +105,11 @@
           <h1>&#8226; Professional Customer Service</h1>
           <p>Experience exceptional customer service from our dedicated team, who are committed to providing expert guidance, personalized assistance, and a seamless buying experience from start to finish.</p>
         </section>
-      </article>
+      </div>
     </section>
+    <!-- Hr -->
     <hr>
+    <!-- Collection Section -->
     <section class="collection_section" id="collection">
       <h1 class="title_collection">Our Collection</h1>
       <p class="message_collection">We have everything you need</p>
@@ -165,7 +182,7 @@
         <div class="contact_section">
           <h1 class="contact_header">Contact Us</h1>
           <p class="contact_message">We will response in 1x24 hour after we receive the message.</p>
-          <form action="#" target="_blank" method="get"  onsubmit="return validateForm()">
+          <form action="#"   onsubmit="return validateForm()">
             <label class="contact_label" for="name">Your Name:</label>
             <input class="input_contact" type="text" id="name" placeholder="First and last name">
             <br>
@@ -194,6 +211,13 @@
     
             <input class="submit_contact" type="submit" value="Submit">
           </form>
+        </div>
+        <!-- Pop-up container -->
+        <div id="customPopup" class="popup">
+          <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p>Thank you, please wait</p>
+          </div>
         </div>
       </section>
     </section>
