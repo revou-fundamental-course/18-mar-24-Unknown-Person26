@@ -141,7 +141,6 @@ function closePopup() {
   document.getElementById("customPopup").style.display = "none";
 }
 
-
 // Function to automatically slide the banner images
 function autoSlide() {
   let index = 0;

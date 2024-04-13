@@ -27,9 +27,11 @@
     <!-- Middle Section -->
     <section class="middle_section">    
        <!--Navlink  -->
-      <a href="#home" class="nav_link">Home</a>
-      <a href="#collection" class="nav_link">Collection</a>
-      <a href="#contact" class="nav_link">Contact Us</a>
+       <ul class="nav_link">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
     </section>
     <!-- Right Section -->
     <section class="right_section">   
@@ -39,6 +41,9 @@
       <button id="search_button" class="search_button">
         <img class="search_icon" src="/18-mar-24-Unknown-Person26/icon/search.png" alt="search_icon">
       </button>
+      <div class="nav_button">
+				&#9776;
+			</div>
     </section>
   </header>
   <!-- Main -->
@@ -164,14 +169,14 @@
       <p class="message_contact">Contact Us tell us what we should know</p>
       <section class="customer_sevice_section">
         <div class="motto_section">
-          <div class="motto_container_1">
+          <div class="motto_container">
             <img class="motto_logo" src="/18-mar-24-Unknown-Person26/img/logo.png" alt="logo">
             <div class="text_motto">
               <h1 class="title_motto">"Formosura sem igual"</h1>
               <p class="message_motto">is not just a name, it's an embodiment of unparalleled elegance. Our dealership redefines luxury with a curated selection of automobiles, from high-speed marvels to timeless classics. Step into our world, where automotive excellence knows no bounds.</p>
             </div> 
           </div>
-          <div class="motto_container_2">
+          <div class="motto_container">
             <img class="motto_logo" src="/18-mar-24-Unknown-Person26/img/profile.png" alt="profile">
             <div class="text_motto">
               <h1 class="title_motto">"Farhan Muhamad Fahrezi"</h1>
@@ -229,5 +234,17 @@
     <p class="text_footer_2">&#169; 2024 Farhan M Fahrezi</p>
   </footer>
   <script src="/18-mar-24-Unknown-Person26/js/script.js"></script>
+  <script type="text/javascript">
+		// deklarasi tombol dan menu
+		const tombol = document.querySelector('.nav_button');
+		const menu = document.querySelector('.nav_link');
+ 
+		// membuat event click
+		// pada saat tombol di click, tambahkan class aktif pada class menu
+		// saat diklik lagi, maka class aktif dihilangkan dari class menu (toggle)
+		tombol.addEventListener('click', () => {
+			menu.classList.toggle('aktif');
+		});
+</script>
 </body>
 </html>
